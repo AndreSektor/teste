@@ -11,7 +11,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-       
             </div>
         </section>
     </main>
@@ -31,21 +30,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .produto-image {
-        display: flex;
-        overflow-x: scroll;
-        /* padding: 10px; */
-        scroll-snap-type: x mandatory;
-        /* scroll-padding: 24px; */
-        gap: 12px;
-        margin: 2rem auto;
-    }
-
-    .produto img {
-        flex: 0 0 100%;
-        /* padding: 24px; */
-        scroll-snap-align: start; 
-    }
-</style>

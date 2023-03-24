@@ -9,21 +9,7 @@
     export default {
         name: "BotoesPA",
         methods: {
-            // ant() {
-            //     this.$emit('ant')
-            // },
-            // pro() {
-            //     this.$emit('pro')
-            // },
-            // mudaImagen(proxima) {
-            //     let proximaImagen = this.blusa + proxima;
-            //     if (proximaImagen >= this.img.length) {
-            //         proximaImagen = 0;   
-            //     }else if (proximaImagen < 0){
-            //         proximaImagen = this.img.length - 1;
-            //     }
-            //     this.imagemAtual = proximaImagen;
-            // }
+
         }
     }
 </script>

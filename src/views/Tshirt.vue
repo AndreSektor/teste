@@ -11,7 +11,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA @ant="anterior" @pro="proximo"/>
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -23,7 +22,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -33,7 +31,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -43,7 +40,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -53,7 +49,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -64,23 +59,22 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
             </div>
         </section>
     </main>
 </template>
 
 <script>
-    import BotoesPA from '../components/Botoes.vue'
+
     export default {
         name: "TshirtView",
         data() {
             return {
-                conj: 0
+           
             }
         },
         components: {
-            BotoesPA
+         
         }
     }
 </script>

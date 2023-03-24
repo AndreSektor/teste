@@ -13,8 +13,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA @ant="anterior" @pro="proximo"/>
-                <!-- <a href="#" class="btn">Comprar</a> -->
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -24,8 +22,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
-                <!-- <a href="#" class="btn">Comprar</a> -->
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -35,8 +31,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
-                <!-- <a href="#" class="btn">Comprar</a> -->
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -46,8 +40,6 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
-                <!-- <a href="#" class="btn">Comprar</a> -->
             </div>
             <div class="card">
                 <div class="produto-image">
@@ -57,15 +49,13 @@
                 <p>Conjunto Plauu</p>
                 <p>REF: 001</p>
                 <p>R$ <span class="bold">29,99</span></p>
-                <BotoesPA />
-                <!-- <a href="#" class="btn">Comprar</a> -->
             </div>
         </section>
     </main>
 </template>
 
 <script>
-    import BotoesPA from '../components/Botoes.vue'
+
     export default {
         name: "BlusaView",
         data() {
@@ -74,81 +64,16 @@
             }
         },
         components: {
-            BotoesPA
+
         },
         methods: {
-            ant() {
-                this.$emit('ant')
-            },
-            pro() {
-                this.$emit('pro')
-            },
-            async mudaImagen(proxima) {
-                let proximaImagen = this.blusa + proxima;
-                if (proximaImagen >= this.img.length) {
-                    proximaImagen = 0;   
-                }else if (proximaImagen < 0){
-                    proximaImagen = this.img.length - 1;
-                }
-                this.blusa = proximaImagen;
-            }
+
         }
-      
-        // data() {
-        //     return {
-        //         imagens: [
-        //             { src: require('img/blusa1.jpg') }
-        //         ],
-        //     }
-            
-        // }
      
     }
 </script>
-<!-- "/img/blusa1.jpg",
-"/img/blusa-2.jpg",
-"/img/blusa-3.jpg",
-"/img/blusa-4.jpg",
-"/img/blusa-5.jpg",
-"/img/blusa-6.jpg",
-"/img/blusa-7.jpg",
-"/img/calsa-1.jpg",
-"/img/conj-1.jpg",
-"/img/conj-2.jpg",
-"/img/conj-3.jpg",
-"/img/conj-4.jpg",
-"/img/conj-5.jpg",
-"/img/conj-6.jpg",
-"/img/conj-7.jpg",
-"/img/conj-8.jpg",
-"/img/conj-9.jpg",
-"/img/conj-10.jpg",
-"/img/conj-11.jpg" -->
 
 <style>
-    /* #img-1 {
-        background-image: url('../../public/img/Imagem1.html1.jpg');
-    } */
-
-    /* #img-2 {
-        background-image: url('../../public/img/Imagem2.html.jpg');
-    }
-
-    #img-3 {
-        background-image: url('../../public/img/Img03Tshirt.html.jpg');
-    }
-
-    #img-4 {
-        background-image: url('../../public/img/imgblusa05.html.jpg');
-    }
-
-    #img-5 {
-        background-image: url('../../public/img/imgblusa06.html.jpg');  
-    }
-
-    #img-6 {
-        background-image: url('../../public/img/imgblusa07.html.jpg');
-    } */
 
     .container {
         background-color: rgb(203, 174, 174);
@@ -182,6 +107,11 @@
         background-position: center;
         background-size: cover;
         border-radius: 8px;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory; 
+        flex: 0 0 100%;
+        scroll-snap-align: start; 
     }
 
     h3 {
@@ -199,7 +129,7 @@
         font-weight: bold;
     }
 
-    .btn {
+    /* .btn {
         display: block;
         width: 100%;
         text-align: center;
@@ -214,7 +144,7 @@
 
     .btn:hover {
         background-color: aqua;
-    }
+    } */
 
     @media (max-width: 992px) {
         .card {

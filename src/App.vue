@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TituloComp />
+  <router-view />
+  <Footercomp />
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+  import TituloComp from './components/Titulo.vue'
+  // import BlusaView from './views/Blusa.vue'
+  import Footercomp from './components/Footer.vue'
+  export default {
+  
   name: 'App',
-  components: {
-    HelloWorld
+    components: {
+      TituloComp,
+      // BlusaView,
+      Footercomp
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 </style>
+
+
